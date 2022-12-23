@@ -1,0 +1,291 @@
+.a{
+    user-select: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+.fill { 
+    min-height: 100%;
+}
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* background-position: center center; */
+    background-image: url(../images/bg.png);
+    /* background-repeat: no-repeat; */
+}
+.hz-500{
+    height: 500px;
+    }
+.hz-100{
+    height: 100px;
+    }
+.hz-200{
+height: 200px;
+}
+.hz-300{
+    height: 300px;
+    }
+.wz-300{
+    width: 300px;
+}
+.wz-400{
+    width: 400px;
+}
+.hz-400{
+    height: 400px;
+}
+.wz-200 {
+    width: 200px;
+}
+.fz-40{
+    font-size: 40px;
+}
+
+.content {
+    position: absolute;
+}
+.content1{
+   
+}
+.mt-100{
+    margin-top: 100px;
+}
+.content2{
+}
+.line{
+    position: absolute;
+    width: 100;
+    height: 2px;
+    bottom: 45px;
+    left: 0px;
+  background: #000;
+    border-color: rgb(188, 124, 75) ;
+}
+.line{
+    width: 30%;
+    height: 1px;
+    border-top: solid rgb(188, 124, 75) 2px;
+}
+.list-example{
+    position: absolute;
+    z-index: 3;
+}
+.header{
+    background-color: rgb(188, 124, 75);
+    width: 100%;
+}
+.bgcolor{
+   background-color: #F6EDE3; 
+   /* opacity: 0.8; */
+}
+.bg{
+    /* position: fixed; */
+    left:0;   
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+.ani{
+    left:0;   
+    top: 0;
+    width: 100%;
+    height: 100vh;
+   
+}
+.z1{
+    z-index: 1;
+  }
+  .z2{
+    z-index: 2;
+  }
+/* .bg{background-image: url(../images/Group\ 1\ \(4\).png);} */
+.fork{
+    position: absolute;
+    width: 60px;
+    height: 360px;
+    bottom: 30px;
+    left: 255px;
+    background-image: url(../images/fork.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* 單一張圖要加no repeat */
+    animation-name:forkAni ;
+    animation-duration: 1s;
+    /* 播放一次就停 */
+    animation-iteration-count: infinite;
+}
+.logoimg{
+    width: 400px;
+    height: 400px;
+ 
+}
+.logoimg2{
+    width: 100px;
+    height: 90px;
+}
+@keyframes forkAni{
+    0%{
+    /* 往上長 */
+    /* 有寫的指令每個都要寫 */
+    -webkit-transform: rotate(-10deg);
+    opacity:1;
+    }
+    50%{
+        -webkit-transform: rotate(10deg);
+    opacity:1;
+    }
+    100%{
+        -webkit-transform: rotate(-10deg);
+    opacity:1 ;  
+    }
+}
+.knife{
+    position: absolute;
+    width: 60px;
+    height: 360px;
+    bottom: 30px;
+    left: 875px;
+    background-image: url(../images/knife.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* 單一張圖要加no repeat */
+    animation-name:knifeAni ;
+    animation-duration: 1s;
+    /* 播放一次就停 */
+    animation-iteration-count: infinite;
+}
+
+@keyframes knifeAni{
+    0%{
+    /* 往上長 */
+    /* 有寫的指令每個都要寫 */
+    -webkit-transform: rotate(-10deg);
+    opacity:1;
+    }
+    50%{
+        -webkit-transform: rotate(10deg);
+    opacity:1;
+    }
+    100%{
+        -webkit-transform: rotate(-10deg);
+    opacity:1 ;  
+    }
+}
+.plate{
+    position: absolute;
+    width: 360px;
+    height: 405px;
+    bottom:0px;
+    left: 405px;
+    background-image: url(../images/plate.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* 單一張圖要加no repeat */
+    animation-name:plateAni ;
+    animation-duration: 3s;
+    /* 播放一次就停 */
+    animation-iteration-count: infinite;
+}
+
+@keyframes plateAni{
+    from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+.boxstyle{
+    background-color: #FEF1E3; 
+   opacity: 0.8;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    /* border: solid 1px;
+    border-color: #000; */
+}
+.textstyle{
+margin-top: 200px;
+}
+.btn-back{
+    
+    margin-left: 100px;
+}
+.btncenter{
+    display: flex;
+    /* justify-content: center; */
+    /* margin-left: 80px; */
+}
+.ml-100{
+    /* margin-left: 100px; */
+}
+.btnlineup{
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 0px;
+}
+#spinner {
+    position: fixed;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+  }
+  .box_spinner{
+    /* width: 1500px;
+    height: 2000px; */
+    width: 100%;
+    height: 100%;
+    background-color:#F6EDE3;
+    /* background-size: cover; */
+    /* background-position: center center; */
+    /* background-image: url(../images/Group\ 1\ \(4\).png);
+    background-repeat: no-repeat; */
+    margin:0 auto;
+    
+   
+  }
+  .img_sign2{
+    width: 500px;
+    height: 500px;
+    margin-left:100px;
+  }
+  .animateimg{
+    display: flex;
+  }
+  .img_animate2{
+    width: 400px;
+    height: 600px;
+  }
+  #myProgress {
+    /* position: relative; */
+    width: 100%;
+    height: 30px;
+    background-color: #ddd;
+    margin-top:0px;
+  }
+  
+  #myBar {
+    /* position: absolute; */
+    width: 10%;
+    height: 100%;
+    background-color: #ADC7AC;
+  }
+  
+  #label {
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }

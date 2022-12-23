@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+		<title>好食日記</title>
+	</head>
+  
+	<body data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="10" class="scrollspy-example" tabindex="0">
+    <div id="spinner">
+      
+      <div class="box_spinner">
+          <div class="animateimg d-flex justify-content-center">
+              <img src="images/logo/logo.png" alt="logo" class="logoimg">
+
+          </div>
+         
+          <div id="myProgress" class="mt-100">
+              <div id="myBar">
+                <div id="label">10%</div>
+              </div>
+            </div>
+            
+      </div>
+    </div>
+   
+    <div class="container fill bg-white no-gutter  ">
+     
+      <div id="list-example" class="list-group position-fixed end-0 top-0 me-6 h-100 d-flex justify-content-center  z1">
+        
+        <a class="list-group-item list-group-item-action " href="#list-item-1">導覽</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">基本資料</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">評價</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">心得</a>
+      </div>
+
+      <div class="pl-150 ">
+        
+        
+        <h4 id="list-item-1"> </h4>
+        <article id="article1" class="article article1 z2">
+          <div class="ani d-flex justify-content-center  mb-3" >
+            
+            
+            <!-- <div class="bg"></div> -->
+              <div class="content  d-flex  ">
+
+                <img src="images/logo 1.png" alt="logo" class="logoimg2">
+                <div class="content1">
+                  <span  class="    fz-40  ms-1">好食日記</span>
+                  <!-- <div class="line "></div> -->
+                  <p  class="content2">大家是不是煩惱每天吃甚麼，有了這個神器可以快速幫大家紀錄，也可以看到別人推薦的餐廳，以後吃飯再也不用煩惱了!</p>
+                </div>
+                
+                
+              </div>
+
+              
+              <br>
+              <div class="fork "></div>
+              <div class="knife"></div>
+              <div class="plate"></div>
+          
+          </div>
+         
+          <!-- <img src="images/Group 1 (3).png" alt=""> -->
+          
+        
+        </article>
+          <!-- <div class="bg">
+
+          </div> -->
+           
+            
+       
+        <h4 id="list-item-2"> 基本資料</h4>
+        <article id="article2" class="article article2 z2">
+          <!-- <h3>一、基本資料</h3> -->
+          <!-- label後面填input id -->
+          
+          <div class="input-group mb-3">
+            <span class="input-group-text bgcolor" >使用者姓名</span>
+            <input type="text" class="form-control" id="userName" name="userName"  placeholder="必填，請填使用者名字">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text bgcolor" >餐廳名稱</span>
+            <input type="text" class="form-control" id="restaurantlName" name="restaurantlName" >
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text bgcolor " >餐廳類別</span>
+            <div class="input-group-text bg-white flex-fill">
+              <div class="input-group flex-column">
+                <div class="input-group ">
+                  <div class="input-group-text  bg-white">
+                    <input class="form-check-input mt-0" type="radio" value="中式" name="foodType" id="foodType1">
+                  </div>
+                  <label   class="input-group-text flex-fill bgcolor" for="foodType1">中式</label>
+                </div>
+                <div class="input-group">
+                  <div class="input-group-text  bg-white">
+                    <input class="form-check-input mt-0" type="radio" value="西式" name="foodType" id="foodType2">
+                  </div>
+                  <label   class="input-group-text  flex-fill bgcolor" for="foodType2">西式</label>
+                </div>
+                <div class="input-group">
+                  <div class="input-group-text  bg-white">
+                    <input class="form-check-input mt-0" type="radio" value="日式" name="foodType" id="foodType3">
+                  </div>
+                  <label   class="input-group-text  flex-fill bgcolor" for="foodType3">日式</label>
+                </div>
+                <div class="input-group">
+                   <div class="input-group-text  bg-white">
+                      <input class="form-check-input mt-0" type="radio" value="泰式" name="foodType" id="foodType4">
+                    </div>
+                    <label   class="input-group-text  flex-fill bgcolor" for="foodType4">泰式</label>
+                </div>
+                <div class="input-group">
+                  <div class="input-group-text  bg-white">
+                    <input class="form-check-input mt-0" type="radio" value="其他" name="foodType" id="foodType5">
+                  </div>
+                  <label   class="input-group-text  flex bgcolor " for="foodType5">其他</label>
+                  <input type="text" class=" input-group-text bg-white flex-fill text-start " id="foodType5-text" name="foodType5-text" placeholder="請詳述，謝謝">
+               </div>
+               
+              </div>
+            </div>
+             
+          </div>
+        </article>
+           
+       
+        <h4 id="list-item-3">評價</h4>
+        <p>請勾選您有用餐的項目</p>
+        <article id="article2" class="article article2 z2">  
+          <div class="input-group-text bg-white flex-fill">
+            <div class="input-group flex-column">
+              <div class="input-group ">
+                <div class="input-group-text  bg-white ">
+                  <input class="form-check-input mt-0" type="checkbox" value="開胃菜" name="userNeed1" id="userNeed1-1">
+                </div>
+                <label   class="input-group-text flex-fill bgcolor" for="userNeed1-1">開胃菜</label>
+              </div>
+              <div class="input-group">
+                <div class="input-group-text  bg-white  ">
+                  <input class="form-check-input mt-0" type="checkbox" value="主餐" name="userNeed1" id="userNeed1-2">
+                </div>
+                <label   class="input-group-text  flex-fill  bgcolor" for="userNeed1-2">主餐</label>
+              </div>
+              <div class="input-group">
+                <div class="input-group-text  bg-white ">
+                  <input class="form-check-input mt-0" type="checkbox" value="甜點" name="userNeed1" id="userNeed1-3">
+                </div>
+                <label   class="input-group-text  flex-fill bgcolor" for="userNeed1-3">甜點</label>
+              </div>
+              <div class="input-group">
+                 <div class="input-group-text  bg-white ">
+                <input class="form-check-input mt-0" type="checkbox" value="飲料" name="userNeed1" id="userNeed1-4">
+              </div>
+              <label   class="input-group-text  flex-fill bgcolor" for="userNeed1-4">飲料</label>
+              <div class="input-group">
+                <div class="input-group-text  bg-white ">
+               <input class="form-check-input mt-0 " type="checkbox" value="其他" name="userNeed1" id="userNeed1-5">
+             </div>
+             <label   class="input-group-text bgcolor " for="userNeed1-5">其他</label>
+             <input type="text" class=" input-group-text bg-white flex-fill text-start " id="userNeed1-5-text" name="userNeed1-5-text" placeholder="請詳述，謝謝">
+              </div>
+            </div>
+           
+          </div>
+          
+         
+        </article> 
+        <div class="input-group mb-3">
+          <label class="input-group-text bgcolor" for="grade">星級</label>
+          <select class="form-select " id="grade" name="grade">
+            <option value="none" disabled selected hidden>請為這家餐廳打分</option>
+            <option value="★">★</option>
+            <option value="★★">★★</option>
+            <option value="★★★">★★★</option>
+            <option value="★★★★">★★★★</option>
+            <option value="★★★★★">★★★★★</option>
+          </select>
+        </div>
+        <h4 id="list-item-4">心得</h4>
+        <article id="article6" class="article article6">
+          <p>用餐心得</p>
+
+          <div class="input-group">
+       
+          <textarea class="form-control"name="userNeed3" id="userNeed3" placeholder="自由填答" ></textarea>
+         </div>
+        </article>
+        
+        <div class="btncenter mt-5 mb-5 ml-5">
+          <a href="listnew.html"><div class="btn btn-outline-primary btn-send  mb-5 ">送出</div></a>
+          <!-- <div class="btn btn-outline-primary btn-send  mb-5 ">送出</div> -->
+        </div>
+        
+       
+      </div>
+    </div>
+       
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/test.js"></script>
+	</body>
+</html>
